@@ -27,11 +27,15 @@ function isAnAdult() {
         return true
   }
   
-  // Input: age (number)
-  // Action: Check how many years are left until adulthood (18)
-  // Output: The result (number)
 function yearsToAdulthood() {
-    // write your code here
+    let age = Number(prompt(`enter yor age`))
+    if(age < 18) {
+    let year = 2021
+    let bornYear = year- age
+    alert(` please come back in ${18 - (year - bornYear)} years`)}
+        else 
+    alert (`welcome`)
+    return true
   }
   
   // Input: person ({ age: number, name: string })
@@ -41,7 +45,11 @@ function yearsToAdulthood() {
   //   - if they are not, tell them to come back in X years (when they are)
   // Output: The result (string)
 function admit() {
+    greet()
+    isAnAdult()
+
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
   }
   
+  admit()
